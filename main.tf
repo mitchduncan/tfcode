@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "mitchduncan"
+    workspaces {
+      name = "tfcode"
+    }
+  }
   required_providers {
    random= {
     source ="hashicorp/random"
